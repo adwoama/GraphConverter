@@ -8,7 +8,7 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-H = nx.read_gml("football.gml") #read in a gml file from working directory
+H = nx.read_gml("football.gml",label='id') #read in a gml file from working directory
 nx.write_graphml_lxml(H, "football.graphml") #write out a grpahml file to working directory
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
